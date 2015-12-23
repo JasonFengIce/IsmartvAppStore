@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.boxmate.tv.view.FocusScaleFrame xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/px490"
+    android:layout_height="@dimen/px224"
+        android:focusable="true"
+    android:orientation="horizontal" 
+    android:background="@drawable/base_bg_white"
+    >
+	
+    <com.boxmate.tv.view.WebImageView
+        android:id="@+id/app_icon"
+		style="@style/AppListImage"
+		android:layout_marginLeft="@dimen/px22"
+		android:contentDescription="@string/app_icon"
+		android:layout_gravity="center_vertical"
+         />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px22"
+         >
+        <TextView
+            android:id="@+id/app_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px32"
+            android:layout_marginTop="@dimen/px32"
+            android:layout_alignParentLeft="true"
+            android:textColor="#ffffff"
+            android:ellipsize="end" 
+            android:singleLine="true"
+             ></TextView>
+       	<TextView
+            android:id="@+id/app_version_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px14"
+            android:layout_below="@+id/app_title"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/px32"
+            android:textColor="#ffffff"
+            android:ellipsize="end" 
+            android:singleLine="true"
+             ></TextView>
+       
+       	<TextView
+            android:id="@+id/app_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/app_version_change"
+            android:layout_marginTop="@dimen/px14"
+            android:textSize="@dimen/px32"
+            android:textColor="#ffffff"
+            android:singleLine="true"
+            android:ellipsize="end"
+             ></TextView>
+       	
+ <!--       	<TextView
+            android:id="@+id/app_update_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px12"
+            android:layout_below="@+id/app_size"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/px24"
+            android:textColor="#ffffff"
+             ></TextView> -->
+
+    </RelativeLayout>
+</com.boxmate.tv.view.FocusScaleFrame>

@@ -1,0 +1,13 @@
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners  
+        android:radius="10dp"
+        />
+
+    
+    <solid 
+        android:color="#57ffffff"
+        />
+</shape>
+<!-- From: file:/Users/reco/Desktop/wokpace/recotv/tv/src/main/res/drawable-nodpi/shape_fillet_light.xml -->

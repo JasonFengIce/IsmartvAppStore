@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/px1920"
+    android:layout_height="fill_parent" >
+    
+    <com.boxmate.tv.view.FocusScaleButton
+        android:tag="1-8"
+        android:id="@+id/app_ad_1"
+        style="@style/AdBlock"
+        android:layout_marginLeft="@dimen/px96"
+        android:layout_marginTop="@dimen/px50"
+        android:background="@drawable/image_loading"
+        />
+    
+    <com.boxmate.tv.view.FocusScaleButton
+        android:tag="1-8"
+        android:id="@+id/app_ad_2"
+        style="@style/AdBlock"
+        android:layout_toRightOf="@+id/app_ad_1"
+        android:layout_alignTop="@+id/app_ad_1"
+        android:layout_marginLeft="@dimen/px10"
+        android:background="@drawable/image_loading"
+        />
+    
+    <com.boxmate.tv.view.FocusScaleButton
+        android:tag="1-8"
+        android:id="@+id/app_ad_3"
+        style="@style/AdBlock"
+        android:layout_toRightOf="@+id/app_ad_2"
+        android:layout_alignTop="@+id/app_ad_2"
+        android:layout_marginLeft="@dimen/px10"
+        android:background="@drawable/image_loading"
+        />
+    
+    <com.boxmate.tv.view.FocusScaleButton
+        android:tag="1-8"
+        android:id="@+id/app_ad_4"
+        style="@style/AdBlock"
+        android:layout_toRightOf="@+id/app_ad_3"
+        android:layout_alignTop="@+id/app_ad_3"
+        android:layout_marginLeft="@dimen/px10"
+        android:background="@drawable/image_loading"
+         />
+    
+    <com.boxmate.tv.view.FocusScaleButton
+        android:tag="1-8"
+        android:id="@+id/app_ad_5"
+        style="@style/AdBlock"
+        android:layout_toRightOf="@+id/app_ad_4"
+        android:layout_alignTop="@+id/app_ad_4"
+        android:layout_marginLeft="@dimen/px10"
+        android:background="@drawable/image_loading"
+        />
+    
+    <com.boxmate.tv.view.FocusScaleButton
+        android:tag="1-8"
+        android:id="@+id/app_ad_6"
+        style="@style/AdBlock"
+        android:layout_toRightOf="@+id/app_ad_5"
+        android:layout_alignTop="@+id/app_ad_5"
+        android:layout_marginLeft="@dimen/px10"
+        android:background="@drawable/image_loading"
+        />
+    
+    
+    <!-- 视频 -->
+    <com.boxmate.tv.view.FocusScaleButton
+        android:tag="1-3"
+        android:id="@+id/app_board"
+        style="@style/CatBlock"
+        android:layout_alignLeft="@+id/app_ad_1"
+        android:layout_below="@+id/app_ad_1"
+        android:background="@drawable/app_board"
+        android:layout_marginTop="@dimen/px10"
+         />
+    
+
+    
+    <!-- 娱乐 -->
+    <com.boxmate.tv.view.FocusScaleButton
+        android:tag="1-4"
+        android:id="@+id/app_new"
+        style="@style/CatBlock"
+        android:layout_alignTop="@+id/app_board"
+        android:layout_toRightOf="@+id/app_board"
+        android:layout_marginLeft="@dimen/px10"
+        android:background="@drawable/app_new" />
+    
+  
+    
+    
+    <!-- 生活 -->
+    <com.boxmate.tv.view.FocusScaleButton
+        android:tag="1-5"
+        android:id="@+id/app_live"
+        style="@style/CatBlock"
+        android:layout_alignTop="@+id/app_new"
+        android:layout_toRightOf="@+id/app_new"
+        android:layout_marginLeft="@dimen/px10"
+        android:background="@drawable/app_life" />
+    
+  
+    
+    
+    <!-- 教育 -->
+    <com.boxmate.tv.view.FocusScaleButton
+        android:tag="1-9"
+        android:id="@+id/app_education"
+        style="@style/CatBlock"
+        android:layout_alignTop="@+id/app_live"
+        android:layout_toRightOf="@+id/app_live"
+        android:layout_marginLeft="@dimen/px10"
+        android:background="@drawable/app_education" />
+    
+    
+
+    
+    
+    <!-- 健康 -->
+    <com.boxmate.tv.view.FocusScaleButton
+        android:tag="1-6"
+        android:id="@+id/app_health"
+        style="@style/CatBlock"
+        android:layout_alignTop="@+id/app_education"
+        android:layout_toRightOf="@+id/app_education"
+        android:layout_marginLeft="@dimen/px10"
+        android:background="@drawable/app_health" />
+    
+    
+  
+    
+    
+    <!-- 工具 -->
+    <com.boxmate.tv.view.FocusScaleButton
+        android:tag="1-7"
+        android:id="@+id/app_tools"
+        style="@style/CatBlock"
+        android:layout_alignTop="@+id/app_health"
+        android:layout_toRightOf="@+id/app_health"
+        android:layout_marginLeft="@dimen/px10"
+        android:background="@drawable/app_tools" />
+    
+  
+    
+</RelativeLayout>

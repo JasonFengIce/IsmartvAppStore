@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/px1920"
+    android:clipChildren="false" >
+
+    <com.boxmate.tv.view.FocusScaleButton
+        android:id="@+id/fb_flush"
+        android:layout_width="@dimen/px408"
+        android:layout_height="@dimen/px400"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/px130"
+        android:layout_marginTop="@dimen/px50" />
+
+    <com.boxmate.tv.view.FocusScaleButton
+        android:id="@+id/fb_uninstall"
+        android:layout_width="@dimen/px408"
+        android:layout_height="@dimen/px400"
+        android:layout_toRightOf="@+id/fb_flush"
+        android:layout_marginLeft="@dimen/px10"
+        android:layout_marginTop="@dimen/px50"
+         />
+
+    <com.boxmate.tv.view.FocusScaleButton
+        android:id="@+id/fb_apk"
+        android:layout_width="@dimen/px408"
+        android:layout_height="@dimen/px400"
+        android:layout_marginLeft="@dimen/px10"
+        android:layout_marginTop="@dimen/px50"
+        android:layout_toRightOf="@+id/fb_uninstall" />
+
+    <com.boxmate.tv.view.FocusScaleButton
+        android:id="@+id/fb_bigfile"
+        android:layout_width="@dimen/px408"
+        android:layout_height="@dimen/px400"
+        android:layout_marginLeft="@dimen/px10"
+        android:layout_marginTop="@dimen/px50"
+        android:layout_toRightOf="@+id/fb_apk" />
+
+    <com.boxmate.tv.view.FocusScaleButton
+        android:id="@+id/fb_gc"
+        android:layout_width="@dimen/px408"
+        android:layout_height="@dimen/px240"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fb_flush"
+        android:layout_marginLeft="@dimen/px130"
+        android:layout_marginTop="@dimen/px10" />
+
+    <com.boxmate.tv.view.FocusScaleButton
+        android:id="@+id/fb_update"
+        android:layout_width="@dimen/px408"
+        android:layout_height="@dimen/px240"
+        android:layout_marginLeft="@dimen/px10"
+        android:layout_toRightOf="@+id/fb_gc"
+        android:layout_alignTop="@+id/fb_gc"
+        android:focusable="true" />
+
+    <com.boxmate.tv.view.FocusScaleButton
+        android:id="@+id/fb_system"
+        android:layout_width="@dimen/px408"
+        android:layout_height="@dimen/px240"
+        android:layout_marginLeft="@dimen/px10"
+        android:layout_toRightOf="@+id/fb_update"
+        android:layout_alignTop="@+id/fb_update" />
+
+
+    <com.boxmate.tv.view.FocusScaleButton
+        android:id="@+id/fb_setting"
+        android:layout_width="@dimen/px408"
+        android:layout_height="@dimen/px240"
+        android:layout_marginLeft="@dimen/px10"
+        android:layout_alignTop="@+id/fb_system"
+        android:layout_toRightOf="@+id/fb_system"
+        android:focusable="true" />
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DownloadListActivity" 
+    android:background="@drawable/base_bg_blue"
+    >
+    
+	<TextView
+        android:id="@+id/app_detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px216"
+        android:layout_marginTop="@dimen/px98"
+        android:text="@string/install_manager"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/px44" />
+	
+	<ListView 
+	    android:id="@+id/lv_download"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_marginTop="@dimen/px238"
+	    android:layout_marginLeft="@dimen/px214"
+	    android:divider="@null"
+	    android:listSelector="@android:color/transparent"
+	    >
+	</ListView>
+</RelativeLayout>
+

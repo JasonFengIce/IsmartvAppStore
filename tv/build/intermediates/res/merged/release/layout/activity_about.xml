@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity" 
+    android:orientation="vertical"
+    android:background="@drawable/base_bg_blue"
+    >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px148"
+        	android:layout_marginTop="@dimen/px98"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/px44"
+            android:text="@string/title_activity_about"
+            >
+        </TextView>
+    
+     <ImageView
+         android:layout_width="@dimen/px734"
+         android:layout_height="@dimen/px734"
+         android:background="@drawable/about"
+         android:layout_gravity="center_horizontal"
+          />
+	
+</LinearLayout>
+<!-- From: file:/Users/reco/Desktop/wokpace/recotv/tv/src/main/res/layout/activity_about.xml -->

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tv="http://schemas.android.com/apk/res/com.boxmate.tv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/base_bg_blue"
+     >
+     
+    
+    
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px216"
+        android:layout_marginTop="@dimen/px98"
+        android:text="@string/title_tools_file"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/px42" >
+    </TextView>
+    
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/px28"
+        android:textStyle="bold" />
+    
+
+   	<ImageView 
+   	    android:id="@+id/iv_file"
+   	    android:layout_width="@dimen/px170"
+   	    android:layout_height="@dimen/px232"
+   	    android:layout_marginLeft="@dimen/px540"
+   	    android:layout_marginTop="@dimen/px424"
+   	    android:background="@drawable/tools_file_file"
+   	    />
+   	
+   	
+   	<TextView
+        android:id="@+id/tv_searching"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_file"
+        android:layout_marginTop="@dimen/px524"
+        android:layout_marginLeft="@dimen/px66"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/px36"
+        android:text="@string/tools_bigfile_searching" />
+   	
+   	<TextView
+        android:id="@+id/tv_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_searching"
+        android:layout_alignTop="@+id/tv_searching"
+        android:layout_marginLeft="@dimen/px22"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/px36"
+        />
+   	
+
+    <reco.frame.tv.view.TvListView
+        android:id="@+id/tlv_list"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px1440"
+        android:layout_marginLeft="@dimen/px343"
+        android:layout_marginTop="@dimen/px290"
+        tv:cursorRes="@drawable/shape_rectangle_cursor"
+        tv:itemWidth="@dimen/px1112"
+        tv:itemHeight="@dimen/px80"
+        tv:paddingLeft="@dimen/px59"
+        tv:paddingTop="@dimen/px21"
+        tv:boarderInt="2"
+        tv:scalable="false"
+        tv:focusOption="CHILD_ONLY"
+        tv:scrollMode="EDGE"/>
+
+
+</RelativeLayout>

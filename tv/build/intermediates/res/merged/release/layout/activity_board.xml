@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tv="http://schemas.android.com/apk/res/com.boxmate.tv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/base_bg_blue"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px128"
+        android:layout_marginTop="@dimen/px98"
+        android:text="@string/title_board"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/px44" />
+
+    <ImageView
+        android:id="@+id/iv_board_hot"
+        android:layout_width="@dimen/px520"
+        android:layout_height="@dimen/px80"
+        android:layout_marginLeft="@dimen/px128"
+        android:layout_marginTop="@dimen/px238"
+        android:background="@drawable/home_board_hot" />
+
+    <ImageView
+        android:id="@+id/iv_board_new"
+        android:layout_width="@dimen/px520"
+        android:layout_height="@dimen/px80"
+        android:layout_alignTop="@+id/iv_board_hot"
+        android:layout_marginLeft="@dimen/px52"
+        android:layout_toRightOf="@+id/iv_board_hot"
+        android:background="@drawable/home_board_new" />
+
+    <ImageView
+        android:id="@+id/iv_board_game"
+        android:layout_width="@dimen/px520"
+        android:layout_height="@dimen/px80"
+        android:layout_alignTop="@+id/iv_board_hot"
+        android:layout_marginLeft="@dimen/px52"
+        android:layout_toRightOf="@+id/iv_board_new"
+        android:background="@drawable/home_board_game" />
+
+    <reco.frame.tv.view.TvGridView
+        android:id="@+id/tgv_board"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px680"
+        android:layout_marginLeft="@dimen/px69"
+        android:layout_marginTop="@dimen/px328"
+        tv:paddingLeft="@dimen/px59"
+        tv:paddingTop="@dimen/px11"
+        tv:boarderBottomInt="20"
+        tv:boarderLeftInt="9"
+        tv:boarderRightInt="19"
+        tv:columns="3"
+        tv:cursorRes="@drawable/cursor"
+        tv:itemHeight="@dimen/px104"
+        tv:itemWidth="@dimen/px520"
+        tv:spaceHori="@dimen/px52"
+        tv:spaceVert="@dimen/px10"
+        tv:animationType="TRANSLATE" />
+
+    <reco.frame.tv.view.TvLoadingBar
+        android:id="@+id/tlb_loading"
+        android:layout_width="@dimen/px49"
+        android:layout_height="@dimen/px49"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px541"
+        tv:imageRes="@drawable/loading" />
+
+</RelativeLayout><!-- From: file:/Users/reco/Desktop/wokpace/recotv/tv/src/main/res/layout/activity_board.xml -->

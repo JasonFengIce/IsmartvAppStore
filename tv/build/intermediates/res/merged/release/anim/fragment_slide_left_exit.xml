@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator
+        android:interpolator="@android:interpolator/decelerate_quint"
+        android:valueFrom="0dp" android:valueTo="-1500dp"
+        android:valueType="floatType"
+        android:propertyName="translationX"
+        android:duration="@android:integer/config_mediumAnimTime" />
+    
+</set><!-- From: file:/Users/reco/Desktop/wokpace/recotv/tv/src/main/res/anim/fragment_slide_left_exit.xml -->

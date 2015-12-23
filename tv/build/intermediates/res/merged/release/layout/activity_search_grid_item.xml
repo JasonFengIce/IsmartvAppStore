@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/base_bg_white" >
+
+
+    <reco.frame.tv.view.TvImageView
+        android:id="@+id/tiv_icon"
+        android:layout_width="@dimen/px80"
+        android:layout_height="@dimen/px80"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/px20"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/px30"
+        android:layout_toRightOf="@+id/tiv_icon"
+        android:maxLength="9"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/px32" />
+
+</RelativeLayout><!-- From: file:/Users/reco/Desktop/wokpace/recotv/tv/src/main/res/layout/activity_search_grid_item.xml -->

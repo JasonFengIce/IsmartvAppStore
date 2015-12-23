@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">视云商店</string>
+    
+     <string name="title_activity_cat_search">CatSearchActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_launcher">LauncherActivity</string>
+    <string name="title_activity_setting">设置</string>
+    <string name="title_activity_version_update">版本更新</string>
+    <string name="have_new_version">发现新版本</string>
+    <string name="title_uninstall">应用卸载</string>
+    <string name="title_install">装机必备</string>
+    <string name="title_board">本周榜单</string>
+    <string name="title_activity_about">关于我们</string>
+    <string name="title_activity_control">ControlActivity</string>
+    <string name="title_activity_more_cat">MoreCatActivity</string>
+    <string name="title_activity_image_browser">ImageBrowserActivity</string>
+    <string name="title_activity_tools_remote">电视伴侣</string>
+    <string name="title_activity_tools_clear">一键清理</string>
+    <string name="title_activity_tools_system">系统信息</string>
+    <string name="title_activity_tools_speed">网络测速</string>
+    <string name="title_activity_tools_apk">安装包管理</string>
+    <string name="title_activity_tools_bigfile">大文件管理</string>
+    <string name="title_activity_tools_game">游戏加速</string>
+    <string name="title_activity_tools_video">视频加速</string>
+    <string name="title_activity_tools_gc">垃圾清理</string>
+    <string name="title_activity_theme_list">特色专题</string>
+    <string name="title_activity_theme_detail">专题详细</string>
+    <string name="title_activity_install_list">InstallListActivity</string>
+    <string name="title_activity_peripheral_list">手柄</string>
+    <string name="title_activity_peripheral_detail">手柄描述</string>
+    <string name="title_activity_push_list">PushListActivity</string>
+    <string name="title_activity_delete_old">DeleteOldVersionActivity</string>
+    <string name="title_activity_board">BoardActivity</string>
+    <string name="title_myapp_sub">其他</string>
+    <string name="title_applist">应用</string>
+    <string name="title_setting">设置</string>
+    <string name="title_subtitle_update">版本更新</string>
+    <string name="title_update">版本更新</string>
+    <string name="title_about">关于我们</string>
+    <string name="title_theme">更换背景</string>
+    <string name="title_activity_app_installed">AppInstalled</string>
+    <string name="title_app_theme_list">特色专题</string>
+    
+    <string name="title_tools">工具</string>
+    <string name="title_tools_file">大文件管理</string>
+    <string name="title_tools_divider">|</string>
+    <string name="title_tools_apk">安装包管理</string>
+    <string name="title_tools_netspeed">网速测试</string>
+    <string name="title_tools_gabage">垃圾清理</string>
+    <string name="title_tools_flush">电视加速</string>
+    <string name="title_tools_system">系统信息</string>
+    
+    
+    <string name="app_installed">已安装应用</string>
+    
+    <string name="search_hint">请输入应用首字母</string>
+    <string name="search_result_hot">热门搜索</string>
+    <string name="search_result">搜索结果</string>
+    <string name="search_no_result">未找到相关应用</string>
+    
+    <string name="search_keyboard_letter">字母键盘</string>
+    <string name="search_keyboard_no">数字键盘</string>
+    <string name="search_keyboard_clear">清空</string>
+    
+    
+    
+    <string name="button_rank">排行</string>
+    <string name="button_latest">最新</string>
+    <string name="button_cancel">取消</string>
+    <string name="button_confirm">确认</string>
+    <string name="button_install_all">一键安装</string>
+    
+    <string name="button_install_now">立即安装</string>
+    <string name="button_install_cancel">取消安装</string>
+    <string name="button_open">打开应用</string>
+    
+    <string name="toast_no_update">亲,没有需要更新的应用!</string>
+    
+    
+    <string name="app_tools">工具</string>
+    <string name="app_manager">管理</string>
+    <string name="app_home">推荐</string>
+    <string name="app_video">影音</string>
+    <string name="app_app">应用</string>
+    <string name="app_game">游戏</string>
+    <string name="app_subject">专题</string>
+    
+    <string name="game_peripheral_list">购买手柄</string>
+    <string name="title_activity_app_list">AppListActivity</string>
+    <string name="app_icon">图片icon</string>
+    <string name="press_menu">按菜单键搜索</string>
+    <string name="page_default">0/0</string>
+    <string name="page_string">页</string>
+    <string name="title_activity_app_detail">AppDetail</string>
+    <string name="title_activity_app_downloading">AppDownloadingActivity</string>
+    <string name="app_install">安装</string>
+    <string name="app_install_cancel">取消下载</string>
+    <string name="app_install_go_back">后台下载</string>
+    <string name="default_loading">请稍后</string>
+    <string name="title_activity_download_list">DownloadListActivity</string>
+    <string name="delete">删除</string>
+    <string name="cancel">取消</string>
+    <string name="install">安装</string>
+    <string name="install_manager">下载管理</string>
+    <string name="app_update">应用更新</string>
+    <string name="comment_num">人评分</string>
+    <string name="download_num">次下载</string>
+    <string name="title_activity_app_update">AppUpdateActivity</string>
+    <string name="developer">开发商</string>
+    <string name="version">版本</string>
+    <string name="update">更新</string>
+    <string name="updateing">更新中&#8230;</string>
+    <string name="size">大小</string>
+    <string name="level">分级</string>
+    <string name="language">语言</string>
+    <string name="controller">操作</string>
+    <string name="control_method">操作分类</string>
+    <string name="game_cat">游戏分类</string>
+    <string name="press_for_more">按确认键浏览更多</string>
+    <string name="search_cat">搜索/分类</string>
+    <string name="search">搜索</string>
+    <string name="input_app">输入应用的</string>
+    <string name="firsh_char">首字母</string>
+    <string name="for_seach">进行搜索</string>
+   
+	
+	<string name="setting_desk">在桌面开启电视加速</string>
+	<string name="setting_video_speed">视频加速</string>
+	<string name="setting_update_hint">应用更新提醒</string>
+	<string name="setting_bigfile">大文件管理</string>
+	<string name="setting_state_opened">已开启</string>
+	<string name="setting_state_closed">未开启</string>
+    <string name="setting_upgrade_top">版本更新</string>
+    <string name="setting_upgrade_bottom">手动更新</string>
+    <string name="setting_upgrade_right_no">没有新版本</string>
+    <string name="setting_upgrade_right_yes">亲,有新版本!</string>
+    <string name="setting_about_us">关于我们</string>
+    
+    
+    <string name="setting_update_update">安装该版本</string>
+    <string name="setting_update_ignore">忽略该版本</string>
+    <string name="setting_update_version_name">可更新为\u0020%s\u0020版本</string>
+    <string name="setting_update_now">正在下载</string>
+    <string name="setting_new_version_not_exist">未发现新版本</string>
+    <string name="tools_setting_closed">未开启</string>
+    <string name="tools_setting_opened">已开启</string>
+    <string name="tools_setting_deskspeed">桌面电视加速</string>
+	<string name="tools_system_title">系统信息</string>
+	<string name="tools_device_name">设备名</string>
+	<string name="tools_version">系统版本</string>
+	<string name="tools_cpu">处理器</string>
+	<string name="tools_memory">内存</string>
+	<string name="tools_ip">设备IP</string>
+	<string name="tools_space">存储空间</string>
+	
+	<string name="tools_flush_hint">性能已达最佳\u0020强效提速\u0020%s</string>
+	<string name="tools_flush_clear_memory">释放内存：</string>
+	<string name="tools_flush_clear_count">结束应用：</string>
+	<string name="tools_flush_clear_count_suffix">个</string>
+	<string name="suffix_percent">%</string>
+	<string name="tools_flush_cleaning">正在清理:</string>
+	<string name="tools_flush_best">没有需要清理的进程</string>
+	<string name="tools_flush_finish">完成</string>
+	
+	
+	<string name="tools_speed_testing">正在测速</string>
+	
+	
+	<string name="hint_disconnect">网络连接断开了\u0020请检查网络设置</string>
+	<string name="hint_exit">再次点击返回，即可退出！</string>
+	
+	<string name="prefix_upgrade">更新为</string>
+	<string name="suffix_netspeed_k">KB/s</string>
+	<string name="suffix_netspeed_m">MB/s</string>
+	<string name="suffix_size_b">B</string>
+	<string name="suffix_size_k">KB</string>
+	<string name="suffix_size_m">MB</string>
+	<string name="suffix_size_g">GB</string>
+	<string name="tools_speed_result">测速结果：</string>
+	<string name="tools_speed_ip">当前IP：</string>
+	<string name="tools_speed_score">您的网速击败了全国\u0020%s\u0020的用户</string>
+	<string name="tools_speed_disconnect">您的网络似乎已经断开了？</string>
+	<string name="tools_speed_unbelievaable">您的网速太不可思议了！</string>
+	<string name="tools_speed_music">在线音乐</string>
+	<string name="tools_speed_live">电视直播：</string>
+	<string name="tools_speed_hd">高清视频：</string>
+	<string name="tools_speed_fluency">流畅</string>
+	<string name="tools_speed_delay">较卡</string>
+	
+	<string name="tools_video_speed_useless">本盒子暂不支持此功能</string>
+	
+	<string name="tools_apk_searching">查找中：</string>
+	<string name="tools_apk_install">安装</string>
+	<string name="tools_apk_delete">删除</string>
+	<string name="tools_apk_delete_all">删除全部安装包</string>
+	<string name="tools_apk_noapk">亲，没有找到安装包</string>
+	
+	<string name="tools_bigfile_searching">正在扫描：</string>
+	<string name="tools_bigfile_install">安装</string>
+	<string name="tools_bigfile_delete">删除</string>
+	<string name="tools_bigfile_deleted">已删</string>
+	<string name="tools_bigfile_nofile">亲，没有找到大文件</string>
+	
+	<string name="tools_gc_memory">内存占用</string>
+	<string name="tools_gc_cache">正在清理缓存</string>
+	<string name="tools_gc_uninstall">正在清理卸载残留</string>
+	<string name="tools_gc_other">正在清理无效文件</string>
+	<string name="tools_gc_scanning">正在扫描：</string>
+	<string name="tools_gc_cleanning">正在清理：</string>
+	<string name="tools_gc_gabage">可清理垃圾</string>
+	<string name="tools_gc_without">系统很干净\u0020无需清理</string>
+	<string name="tools_gc_result">清理完毕</string>
+	<string name="tools_gc_prefix">正在扫描：</string>
+	<string name="tools_gc_clear_total">本次为您清理了\u0020%s\u0020的垃圾</string>
+	<string name="tools_gc_clear_history">累计为您清理了\u0020%s\u0020的垃圾</string>
+	<string name="tools_video_speed_hint">将独占网络及内存</string>
+	<string name="manage_hint_no_new_version">亲，版本已经是最新的啦！</string>
+	<string name="manage_setting_title">设置</string>
+	<string name="manage_setting_desk_speed">桌面加速工具</string>
+	<string name="manage_setting_update_tips">应用更新提示</string>
+	<string name="manage_update_updateall">一键更新</string>
+	
+	<string name="easy_install">一键安装</string>
+	<string name="easy_download_hint">已加入后台下载列表</string>
+	<string name="home_download_hint">有%s个应用正在下载</string>
+	<string name="push_title">亲，系统检测您安装的软件较少</string>
+	<string name="push_subhead">全家盒为您精心挑选了装机必备软件</string>
+	<string name="push_hint">已加入后台下载列表</string>
+	
+
+	<!--事件统计  -->
+	<string name="count_push_click">push_click</string>
+	<string name="count_push_ignore">push_ignore</string>
+	<string name="count_home_search_click">home_search_click</string>
+	<string name="count_home_board_click">home_board_click</string>
+	<string name="count_home_themelist_click">home_themelist_click</string>
+	<string name="count_home_clear_click">home_clear_click</string>
+	<string name="count_home_install_click">home_install_click</string>
+	<string name="count_home_live_click">home_live_click</string>
+	<string name="count_home_video_click">home_video_click</string>
+	<string name="count_home_game_click">home_game_click</string>
+	<string name="count_home_education_click">home_education_click</string>
+	<string name="count_home_adlist_click">home_adlist_click</string>
+	
+	
+	<string name="count_tool_bigfile_click">tool_bigfile_click</string>
+	<string name="count_tool_apk_click">tool_apk_click</string>
+	<string name="count_tool_flush_click">tool_flush_click</string>
+	<string name="count_tool_netspeed_click">tool_netspeed_click</string>
+	<string name="count_tool_gabage_click">tool_gabage_click</string>
+	<string name="count_tool_video_speed_click">tool_videospeed_click</string>
+	<string name="count_tool_remote_click">tool_remote_click</string>
+	<string name="count_tool_system_click">tool_system_click</string>
+	
+	
+</resources>

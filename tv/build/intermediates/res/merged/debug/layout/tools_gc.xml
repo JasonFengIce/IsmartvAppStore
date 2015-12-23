@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tv="http://schemas.android.com/apk/res/com.boxmate.tv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/base_bg_blue" >
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px216"
+        android:layout_marginTop="@dimen/px98"
+        android:text="@string/title_tools_gabage"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/px42" >
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/rl_running"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/rl_circle"
+            android:layout_width="@dimen/px400"
+            android:layout_height="@dimen/px400"
+            android:layout_marginLeft="@dimen/px535"
+            android:layout_marginTop="@dimen/px353" >
+
+            <reco.frame.tv.view.TvProgressBar
+                android:id="@+id/tpb_clear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                tv:backgroundColor="@android:color/transparent"
+                tv:progressStartColor="@drawable/base_bg_white"
+                tv:roundWidth="@dimen/px60"
+                tv:textDisplayable="false" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/px60"
+                android:background="@drawable/tools_gc_circle" />
+
+            <TextView
+                android:id="@+id/tv_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/px107"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/px36" />
+
+            <TextView
+                android:id="@+id/tv_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/px90" />
+
+            <TextView
+                android:id="@+id/tv_size_suffix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/px100"
+                android:text="@string/suffix_size_m"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/px36" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px32"
+            android:layout_marginTop="@dimen/px524"
+            android:layout_toRightOf="@+id/rl_circle"
+            android:text="@string/tools_gc_scanning"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/px36" />
+
+        <TextView
+            android:id="@+id/tv_path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_state"
+            android:layout_marginLeft="@dimen/px22"
+            android:layout_toRightOf="@+id/tv_state"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/px36" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px412"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_size_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/px90" />
+
+        <TextView
+            android:id="@+id/tv_size_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_size_total"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px22"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/px36" />
+
+        <reco.frame.tv.view.TvButton
+            android:id="@+id/tb_finish"
+            android:layout_width="@dimen/px300"
+            android:layout_height="@dimen/px80"
+            android:layout_below="@+id/tv_size_history"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px60"
+            android:background="@drawable/base_bg_white"
+            android:text="@string/tools_flush_finish"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/px36"
+            android:visibility="gone"
+            tv:boarder="@dimen/px2"
+            tv:cursorRes="@drawable/shape_rectangle_cursor"
+            tv:scalable="false" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/Users/reco/Desktop/wokpace/recotv/tv/src/main/res/layout/tools_gc.xml -->

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tv="http://schemas.android.com/apk/res/com.boxmate.tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:paddingRight="@dimen/px15"
+    android:paddingTop="@dimen/px2" >
+
+    <LinearLayout
+        android:id="@+id/download_list_left_detail"
+        android:layout_width="@dimen/px1058"
+        android:layout_height="@dimen/px104"
+        android:layout_marginLeft="@dimen/px15"
+        android:background="@drawable/base_bg_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <reco.frame.tv.view.TvImageView
+            android:id="@+id/tiv_icon"
+            android:layout_width="@dimen/px80"
+            android:layout_height="@dimen/px80"
+            android:layout_marginLeft="@dimen/px32" >
+        </reco.frame.tv.view.TvImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px30"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/download_list_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px13"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/px32" />
+
+            <reco.frame.tv.view.TvProgressBar
+                android:id="@+id/tpb_download"
+                tv:style="RECT"
+                android:layout_width="@dimen/px884"
+                android:layout_height="@dimen/px16"
+                android:layout_marginTop="@dimen/px16"
+                tv:backgroundColor="@android:color/white"
+                tv:progressStartColor="#4caf50" />
+            -->
+        </LinearLayout>
+    </LinearLayout>
+
+    <reco.frame.tv.view.TvSubButton
+        android:id="@+id/download_list_install_btn"
+        android:layout_width="@dimen/px206"
+        android:layout_height="@dimen/px104"
+        android:layout_alignTop="@+id/download_list_left_detail"
+        android:layout_marginLeft="@dimen/px10"
+        android:layout_toRightOf="@+id/download_list_left_detail"
+        android:background="@drawable/base_bg_white"
+        android:text="@string/cancel"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/px36"
+        tv:cursorRes="@drawable/shape_rectangle_cursor" />
+
+    <reco.frame.tv.view.TvSubButton
+        android:id="@+id/download_list_del_btn"
+        android:layout_width="@dimen/px206"
+        android:layout_height="@dimen/px104"
+        android:layout_alignTop="@+id/download_list_install_btn"
+        android:layout_marginLeft="@dimen/px10"
+        android:layout_marginRight="@dimen/px40"
+        android:layout_toRightOf="@+id/download_list_install_btn"
+        android:background="@drawable/base_bg_white"
+        android:text="@string/delete"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/px36"
+        tv:boarder="@dimen/px2"
+        tv:cursorRes="@drawable/shape_rectangle_cursor" />
+
+</RelativeLayout><!-- From: file:/Users/reco/Desktop/wokpace/recotv/tv/src/main/res/layout/activity_download_list_item.xml -->

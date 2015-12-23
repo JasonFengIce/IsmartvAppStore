@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal"
+    >
+  	<RelativeLayout 
+  	    android:id="@+id/keyboard_left_container"
+  	    android:layout_width="@dimen/px868"
+  	    android:layout_height="wrap_content"
+  	    ></RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/keyboard_right_container"
+  	    android:layout_width="@dimen/px388"
+  	    android:layout_height="wrap_content"
+  	    android:layout_marginLeft="@dimen/px30"
+  	    android:background="#ff0000"
+  	    ></RelativeLayout>
+    
+    
+</LinearLayout>

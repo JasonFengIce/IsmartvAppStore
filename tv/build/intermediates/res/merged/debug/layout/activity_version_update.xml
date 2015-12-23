@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tv="http://schemas.android.com/apk/res/com.boxmate.tv"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/base_bg_blue" >
+
+    <TextView
+        android:id="@+id/title_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/px124"
+        android:layout_marginTop="@dimen/px84"
+        android:text="@string/title_update"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/px44" />
+
+
+    <TextView
+        android:id="@+id/tv_version_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px310"
+        android:text="@string/title_subtitle_update"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/px36" />
+
+    <TextView
+        android:id="@+id/tv_version_info"
+        android:layout_width="@dimen/px800"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_version_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px36"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/px30" />
+
+    <reco.frame.tv.view.TvProgressBar
+        android:id="@+id/tpb_download"
+        tv:style="FAN"
+        android:layout_width="@dimen/px64"
+        android:layout_height="@dimen/px64"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_circle_white"
+        android:visibility="invisible"
+        tv:backgroundColor="@color/white_30"
+        tv:progressStartColor="@color/white_30"
+        tv:roundWidth="@dimen/px2" />
+
+    <TextView
+        android:id="@+id/tv_update_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tpb_download"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px70"
+        android:text="@string/title_subtitle_update"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/px36"
+        android:visibility="gone" />
+
+    <reco.frame.tv.view.TvButton
+        android:id="@+id/tb_ignore"
+        android:layout_width="@dimen/px300"
+        android:layout_height="@dimen/px80"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/px298"
+        android:layout_marginLeft="@dimen/px654"
+        android:background="@drawable/shape_rectangle_trusculent"
+        android:text="@string/setting_update_ignore"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/px36"
+        tv:boarder="@dimen/px1"
+        tv:cursorRes="@drawable/shape_rectangle_cursor"
+        tv:scalable="false" />
+
+    <reco.frame.tv.view.TvButton
+        android:id="@+id/tb_update"
+        android:layout_width="@dimen/px300"
+        android:layout_height="@dimen/px80"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/px298"
+        android:layout_marginLeft="@dimen/px10"
+        android:layout_toRightOf="@+id/tb_ignore"
+        android:background="@drawable/shape_rectangle_trusculent"
+        android:text="@string/setting_update_update"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/px36"
+        tv:boarder="@dimen/px1"
+        tv:cursorRes="@drawable/shape_rectangle_cursor"
+        tv:scalable="false" />
+
+</RelativeLayout><!-- From: file:/Users/reco/Desktop/wokpace/recotv/tv/src/main/res/layout/activity_version_update.xml -->

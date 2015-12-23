@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tv="http://schemas.android.com/apk/res/com.boxmate.tv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/base_bg_blue" >
+
+    <!-- 澶撮�ㄦ��棰� -->
+
+    <TextView
+        android:id="@+id/app_detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px216"
+        android:layout_marginTop="@dimen/px98"
+        android:text="@string/app_update"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/px42" >
+    </TextView>
+
+    <com.boxmate.tv.view.PageScrollView
+        android:id="@+id/app_list_container_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_detail_title"
+        android:layout_marginLeft="@dimen/px127"
+        android:layout_marginTop="@dimen/px5"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:orientation="horizontal" >
+    </com.boxmate.tv.view.PageScrollView>
+
+    <reco.frame.tv.view.TvButton
+        android:id="@+id/tb_update"
+        android:layout_width="@dimen/px348"
+        android:layout_height="@dimen/px80"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/px76"
+        android:background="@drawable/base_bg_white"
+        android:text="@string/manage_update_updateall"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/px36"
+        tv:boarder="@dimen/px2"
+        tv:cursorRes="@drawable/shape_rectangle_cursor"
+        tv:scalable="false" />
+
+    
+    <reco.frame.tv.view.TvLoadingBar 
+        android:id="@+id/tlb_loading"
+        android:layout_width="@dimen/px49"
+        android:layout_height="@dimen/px49"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px541"
+        tv:imageRes="@drawable/loading"
+        />
+
+</RelativeLayout>

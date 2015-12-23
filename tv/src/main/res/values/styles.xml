@@ -1,0 +1,213 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="HomeBigBlock">
+        <item name="android:layout_width">@dimen/px708</item>
+        <item name="android:layout_height">@dimen/px466</item>
+        <item name="android:layout_marginLeft">@dimen/px18</item>
+    </style>
+
+    <style name="HomeLittleBlock">
+        <item name="android:layout_width">@dimen/px224</item>
+        <item name="android:layout_height">@dimen/px224</item>
+        <item name="android:layout_marginLeft">@dimen/px18</item>
+    </style>
+
+    <style name="HomeMiddleBlock">
+        <item name="android:layout_width">@dimen/px362</item>
+        <item name="android:layout_height">@dimen/px466</item>
+        <item name="android:layout_marginLeft">@dimen/px18</item>
+    </style>
+
+    <style name="HomeMiddleBottomBlock">
+        <item name="android:layout_width">@dimen/px362</item>
+        <item name="android:layout_height">@dimen/px224</item>
+        <item name="android:layout_marginLeft">@dimen/px18</item>
+    </style>
+
+    <style name="HomeSubjectBlock">
+        <item name="android:layout_width">@dimen/px466</item>
+        <item name="android:layout_height">@dimen/px466</item>
+        <item name="android:layout_marginLeft">@dimen/px18</item>
+    </style>
+
+    <style name="MainNavButton">
+        <item name="android:layout_width">@dimen/px160</item>
+        <item name="android:layout_height">@dimen/px85</item>
+    </style>
+
+    <style name="AppListContainer">
+        <item name="android:layout_width">@dimen/px1920</item>
+        <item name="android:layout_height">@dimen/px796</item>
+    </style>
+
+    <style name="AppListImage">
+        <item name="android:layout_width">@dimen/px180</item>
+        <item name="android:layout_height">@dimen/px180</item>
+    </style>
+
+    <style name="roomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar_drawable</item>
+        <item name="android:minHeight">@dimen/px23</item>
+        <item name="android:maxHeight">@dimen/px23</item>
+    </style>
+
+    <style name="AppListBottomBtn">
+        <item name="android:layout_width">@dimen/px110</item>
+        <item name="android:layout_height">@dimen/px70</item>
+    </style>
+
+    <style name="MainTopListBtn">
+        <item name="android:layout_width">@dimen/px114</item>
+        <item name="android:layout_height">@dimen/px42</item>
+    </style>
+
+    <style name="AppDetailInfoList">
+        <item name="android:layout_marginLeft">@dimen/px25</item>
+        <item name="android:layout_marginTop">@dimen/px5</item>
+    </style>
+    
+    
+    <style name="activity_anim_scale_alpha">
+    
+      <item name="@android:activityOpenEnterAnimation">@anim/custom_activity_in</item>
+
+      <item name="@android:activityOpenExitAnimation">@null</item>
+
+      <item name="@android:activityCloseEnterAnimation">@anim/custom_activity_in</item>
+
+      <item name="@android:activityCloseExitAnimation">@anim/custom_activity_out</item>
+    
+    </style>
+
+    <color name="MainNavColorNormal">#50ffffff</color>
+    <color name="MainNavColorFocus">#ffffffff</color>
+
+    <dimen name="MainNavSizeFocus">48sp</dimen>
+    <dimen name="MainNavSizeNormal">26sp</dimen>
+    
+    
+    <style name="Transparent" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@color/transparent_black</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- <item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item> -->
+    </style>
+    
+    <style name="Transparent_black_80" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@color/transparent_black_80</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- <item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item> -->
+    </style>
+    
+    <style name="Transparent_blue" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@color/transparent_blue_95</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- <item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item> -->
+    </style>
+    
+    <style name="Translucent_Scale_Alpha" parent="android:style/Theme.Translucent">
+
+	  <item name="android:windowBackground">@color/transparent_black</item>
+	  <item name="android:windowNoTitle">true</item>
+	  <item name="@android:windowAnimationStyle">@style/activity_anim_scale_alpha</item>
+	</style>
+    
+    <style name="SettingBlock">
+        <item name="android:layout_width">@dimen/px280</item>
+        <item name="android:layout_height">@dimen/px430</item>
+    </style>
+	<style name="GameControlBlock">
+        <item name="android:layout_width">@dimen/px345</item>
+        <item name="android:layout_height">@dimen/px224</item>
+        <item name="android:layout_marginLeft">@dimen/px18</item>
+    </style>
+    <style name="GameControlBlockBody">
+        <item name="android:layout_width">@dimen/px224</item>
+        <item name="android:layout_height">@dimen/px466</item>
+        <item name="android:layout_marginLeft">@dimen/px18</item>
+    </style>
+    
+    
+    
+    <style name="HomeLittleSquare">
+        <item name="android:layout_width">@dimen/px210</item>
+        <item name="android:layout_height">@dimen/px210</item>
+    </style>
+    
+    <style name="HomeLittleRect">
+        <item name="android:layout_width">@dimen/px210</item>
+        <item name="android:layout_height">@dimen/px140</item>
+    </style>
+    
+    <style name="CatBlock">
+        <item name="android:layout_width">@dimen/px280</item>
+        <item name="android:layout_height">@dimen/px210</item>
+    </style>
+    
+    
+    <style name="AdBlock">
+        <item name="android:layout_width">@dimen/px280</item>
+        <item name="android:layout_height">@dimen/px430</item>
+    </style>
+    
+    <style name="AdBlock_Tools">
+        <item name="android:layout_width">@dimen/px280</item>
+        <item name="android:layout_height">@dimen/px320</item>
+    </style>
+    
+    
+    <style name="update_block">
+
+	    <item name="@android:windowEnterAnimation">@anim/fade_in</item>
+	
+	   <item name="@android:windowExitAnimation">@anim/fade_out</item>
+	
+	</style>
+	
+    
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#bababa</color>
+    <color name="gray_apk">#44454b</color>
+    <color name="green_gc">#14b62e</color>
+    <color name="main_style">#56ccc7</color>
+    <color name="transparent_black">#00000000</color>
+    <color name="transparent_black_50">#80000000</color>
+    <color name="transparent_black_70">#b2000000</color>
+    <color name="transparent_black_80">#c8000000</color>
+    <color name="transparent_black_90">#e6000000</color>
+    <color name="transparent_white_20">#35ffffff</color>
+    <color name="transparent_gray_80">#c844454b</color>
+    <color name="transparent_blue_95">#eb124c9c</color>
+    <color name="bg_44454b">#44454b</color>
+    <color name="bg_23252b">#23252b</color>
+    <color name="white_30">#57ffffff</color>
+    
+    <drawable name="transparent_background_70_drawalbe">#b2000000</drawable>
+    <drawable name="transparent_0">#00000000</drawable>
+    
+    <drawable name="base_bg_blue">#1565c0</drawable>
+    
+    <drawable name="base_bg_white">#508cd0</drawable>
+    <drawable name="line_blue_line">#73a3d9</drawable>
+    
+</resources>

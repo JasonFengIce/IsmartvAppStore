@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tv="http://schemas.android.com/apk/res/com.boxmate.tv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/base_bg_blue" >
+
+    <!-- 澶撮�ㄦ��棰� -->
+
+    
+    <TextView
+        android:id="@+id/app_detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px216"
+        android:layout_marginTop="@dimen/px98"
+        android:text="@string/title_uninstall"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/px42" >
+    </TextView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px179"
+        android:layout_marginRight="@dimen/px179" >
+    </android.support.v4.view.ViewPager>
+
+    <ImageView
+        android:id="@+id/left_tip"
+        android:layout_width="@dimen/px32"
+        android:layout_height="@dimen/px61"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/px100"
+        android:alpha="0.5"
+        android:src="@drawable/left_tip"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/right_tip"
+        android:layout_width="@dimen/px32"
+        android:layout_height="@dimen/px61"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/px100"
+        android:alpha="0.5"
+        android:src="@drawable/right_tip"
+        android:visibility="gone" />
+
+<reco.frame.tv.view.TvLoadingBar 
+        android:id="@+id/tlb_loading"
+        android:layout_width="@dimen/px49"
+        android:layout_height="@dimen/px49"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px541"
+        tv:imageRes="@drawable/loading"
+        />
+
+</RelativeLayout>
