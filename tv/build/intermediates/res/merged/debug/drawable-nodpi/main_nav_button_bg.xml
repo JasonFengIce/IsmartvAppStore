@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android" >
-    <item 
-        android:state_focused="true"
-        android:drawable="@drawable/nav_bg" 
-        ></item>
-</selector><!-- From: file:/Users/reco/Desktop/wokpace/recotv/tv/src/main/res/drawable-nodpi/main_nav_button_bg.xml -->
