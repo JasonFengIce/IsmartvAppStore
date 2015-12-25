@@ -2,11 +2,18 @@
 <items version="2" >
 
     <item
-        jar="/Users/reco/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.1/2e66da15851f9f5b5079228f856c2f090ba98c38/gson-2.1.jar"
+        jar="/Users/reco/Desktop/wokpace/recotv/tv/libs/commons-codec-1.4.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="2e66da15851f9f5b5079228f856c2f090ba98c38">
-        <dex dex="/Users/reco/Desktop/wokpace/recotv/tv/build/intermediates/pre-dexed/debug/gson-2.1-7d1587be04b2b06d0c72dffe5b5766632a3127fb.jar" />
+        sha1="739a8df9e9b81c84e3da26fdbba27a79939dfa49">
+        <dex dex="/Users/reco/Desktop/wokpace/recotv/tv/build/intermediates/pre-dexed/debug/commons-codec-1.4-a81f37b18552cf5425ed3e766b4a4b895acf5b21.jar" />
+    </item>
+    <item
+        jar="/Users/reco/Desktop/wokpace/recotv/tv/build/intermediates/exploded-aar/recotv/recoTvFrame/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="605bf6b4df87ecd28a50e09b383e44cfb5d64a54">
+        <dex dex="/Users/reco/Desktop/wokpace/recotv/tv/build/intermediates/pre-dexed/debug/classes-de402c9ee5e0d7b2f67a9308f31aa498331deec6.jar" />
     </item>
     <item
         jar="/Users/reco/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
@@ -23,11 +30,11 @@
         <dex dex="/Users/reco/Desktop/wokpace/recotv/tv/build/intermediates/pre-dexed/debug/umeng-sdk-analytics_v5.2.2-5ac5fdbaa98064fcbea52439c7dfa069a55fe14d.jar" />
     </item>
     <item
-        jar="/Users/reco/Desktop/wokpace/recotv/tv/build/intermediates/exploded-aar/recotv/recoTvFrame/unspecified/jars/classes.jar"
+        jar="/Users/reco/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.1/2e66da15851f9f5b5079228f856c2f090ba98c38/gson-2.1.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="605bf6b4df87ecd28a50e09b383e44cfb5d64a54">
-        <dex dex="/Users/reco/Desktop/wokpace/recotv/tv/build/intermediates/pre-dexed/debug/classes-de402c9ee5e0d7b2f67a9308f31aa498331deec6.jar" />
+        sha1="2e66da15851f9f5b5079228f856c2f090ba98c38">
+        <dex dex="/Users/reco/Desktop/wokpace/recotv/tv/build/intermediates/pre-dexed/debug/gson-2.1-7d1587be04b2b06d0c72dffe5b5766632a3127fb.jar" />
     </item>
     <item
         jar="/Users/reco/Desktop/wokpace/recotv/tv/build/intermediates/exploded-aar/recotv/recoTvFrame/unspecified/jars/libs/httpcore-4.2.1.jar"
@@ -35,13 +42,6 @@
         revision="23.0.2"
         sha1="2d503272bf0a8b5f92d64db78b4ba9abbaccc6fd">
         <dex dex="/Users/reco/Desktop/wokpace/recotv/tv/build/intermediates/pre-dexed/debug/httpcore-4.2.1-c78572d0fa12ff6c8e36ed125d28cd4369bcf3a8.jar" />
-    </item>
-    <item
-        jar="/Users/reco/Desktop/wokpace/recotv/tv/libs/commons-codec-1.4.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="739a8df9e9b81c84e3da26fdbba27a79939dfa49">
-        <dex dex="/Users/reco/Desktop/wokpace/recotv/tv/build/intermediates/pre-dexed/debug/commons-codec-1.4-a81f37b18552cf5425ed3e766b4a4b895acf5b21.jar" />
     </item>
 
 </items>

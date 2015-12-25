@@ -33,6 +33,8 @@ public class Config {
 	static public String JUMP_PARAM = "JumpParam";
 	static public int PAGE_HOME = 1;
 	static public int PAGE_MANAGE = 0;
+	static public int PAGE_GAME = 2;
+	static public int PAGE_APP = 3;
 	static public String[] params={"manage","home","game","app"};
 	static public String[] deskParams = {"gabage", "uninstall", "more"};
 	static public int PAGE_INDEX = 1;

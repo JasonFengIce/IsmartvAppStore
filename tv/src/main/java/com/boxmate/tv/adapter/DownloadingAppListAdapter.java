@@ -18,6 +18,7 @@ import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.AbsListView.LayoutParams;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.boxmate.tv.R;
@@ -98,7 +99,7 @@ public class DownloadingAppListAdapter extends BaseAdapter {
 		TvImageView tiv_icon = ((TvImageView) view.findViewById(R.id.tiv_icon));
 		tiv_icon.configImageUrl(taskInfo.iconUrl);
 
-		TvSubButton tsb_install = ((TvSubButton) view
+		Button tsb_install = ((Button) view
 				.findViewById(R.id.download_list_install_btn));
 
 		if (taskInfo.status == TaskInfo.WAITING
@@ -128,7 +129,7 @@ public class DownloadingAppListAdapter extends BaseAdapter {
 				}
 			});
 		}
-		((TvSubButton) view.findViewById(R.id.download_list_del_btn))
+		((Button) view.findViewById(R.id.download_list_del_btn))
 				.setOnClickListener(new OnClickListener() {
 
 					@Override

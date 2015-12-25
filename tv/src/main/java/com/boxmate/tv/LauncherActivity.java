@@ -248,8 +248,8 @@ public class LauncherActivity extends Activity {
 					Config.PAGE_INDEX = Config.PAGE_HOME;
 				} else {
 					for (int i = 0; i < Config.params.length; i++) {
-						if (Config.deskParams[i].equalsIgnoreCase(jumpParam)) {
-							Config.PAGE_INDEX = Config.PAGE_MANAGE;
+						if (Config.params[i].equalsIgnoreCase(jumpParam)) {
+							Config.PAGE_INDEX = i;
 							break;
 						}
 					}

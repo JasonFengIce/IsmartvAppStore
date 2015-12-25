@@ -113,18 +113,11 @@ public class DownloadListActivity extends Activity implements
 			AppDownloadManager manager = AppDownloadManager.getInstance();
 			manager.delTaskById(getApplicationContext(),taskInfo);
 			adapter.notifyDataSetChanged();
-	
 	}
 
 	@Override
 	public void onInstallClick(int position) {
-
-		Toast toast = Toast.makeText(getApplicationContext(), "heheheh ", Toast.LENGTH_SHORT);
-		toast.show();
-
 		TaskInfo taskInfo = taskInfoList.get(position);
-
-		Log.d("install",taskInfo.toString());
 		CommonUtil.installApk(taskInfo.getDownloadUrl(), this);
 	}
 	
