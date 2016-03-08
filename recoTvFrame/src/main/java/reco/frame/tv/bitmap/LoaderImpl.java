@@ -31,10 +31,8 @@ import android.util.Log;
 public class LoaderImpl {
 	private final static String TAG = "LoaderImpl";
 	private Context context;
-	// ÄÚ´æÖÐµÄÈíÓ¦ÓÃ»º´æ
-	static public LruCache<String, Bitmap> mLruCache; 
+	static public LruCache<String, Bitmap> mLruCache;
 
-	// ÊÇ·ñ»º´æÍ¼Æ¬ÖÁ±¾µØÎÄ¼þ
 	private boolean cache2FileFlag = true;
 
 	private String cachedDir;
@@ -47,15 +45,15 @@ public class LoaderImpl {
 	
 	public static void initLruCache() {
 		if (LoaderImpl.mLruCache == null) {
-			// »ñÈ¡µ½¿ÉÓÃÄÚ´æµÄ×î´óÖµ£¬Ê¹ÓÃÄÚ´æ³¬³öÕâ¸öÖµ»áÒýÆðOutOfMemoryÒì³£¡£
-			// LruCacheÍ¨¹ý¹¹Ôìº¯Êý´«Èë»º´æÖµ£¬ÒÔKBÎªµ¥Î»¡£
+			// ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½Ê¹ï¿½ï¿½ï¿½Ú´æ³¬ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½OutOfMemoryï¿½ì³£ï¿½ï¿½
+			// LruCacheÍ¨ï¿½ï¿½ï¿½ìº¯ï¿½ï¿½ï¿½ë»ºï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½KBÎªï¿½ï¿½Î»ï¿½ï¿½
 			int maxMemory = (int) (Runtime.getRuntime().maxMemory() / 1024);
-			// Ê¹ÓÃ×î´ó¿ÉÓÃÄÚ´æÖµµÄ1/6×÷Îª»º´æµÄ´óÐ¡¡£
+			// Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½Öµï¿½ï¿½1/6ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½Ä´ï¿½Ð¡ï¿½ï¿½
 			int cacheSize = maxMemory / 5;
 			LoaderImpl.mLruCache = new LruCache<String, Bitmap>(cacheSize) {
 				@Override
 				protected int sizeOf(String key, Bitmap bitmap) {
-					// ÖØÐ´´Ë·½·¨À´ºâÁ¿Ã¿ÕÅÍ¼Æ¬µÄ´óÐ¡£¬Ä¬ÈÏ·µ»ØÍ¼Æ¬ÊýÁ¿¡£
+					// ï¿½ï¿½Ð´ï¿½Ë·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¿ï¿½ï¿½Í¼Æ¬ï¿½Ä´ï¿½Ð¡ï¿½ï¿½Ä¬ï¿½Ï·ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 					return bitmap.getByteCount() / 1024;
 				}
 			};
@@ -64,7 +62,7 @@ public class LoaderImpl {
 	}
 
 	/**
-	 * ÊÇ·ñ»º´æÍ¼Æ¬ÖÁÍâ²¿ÎÄ¼þ
+	 * ï¿½Ç·ñ»º´ï¿½Í¼Æ¬ï¿½ï¿½ï¿½â²¿ï¿½Ä¼ï¿½
 	 * 
 	 * @param flag
 	 */
@@ -73,7 +71,7 @@ public class LoaderImpl {
 	}
 
 	/**
-	 * ÉèÖÃ»º´æÍ¼Æ¬µ½Íâ²¿ÎÄ¼þµÄÂ·¾¶
+	 * ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½â²¿ï¿½Ä¼ï¿½ï¿½ï¿½Â·ï¿½ï¿½
 	 * 
 	 * @param cacheDir
 	 */
@@ -82,13 +80,13 @@ public class LoaderImpl {
 	}
 
 	/**
-	 * ´ÓÍøÂç¶ËÏÂÔØÍ¼Æ¬
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬
 	 * 
 	 * @param url
-	 *            ÍøÂçÍ¼Æ¬µÄURLµØÖ·
+	 *            ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½URLï¿½ï¿½Ö·
 	 * @param cache2Memory
-	 *            ÊÇ·ñ»º´æ(»º´æÔÚÄÚ´æÖÐ)
-	 * @return bitmap Í¼Æ¬bitmap½á¹¹
+	 *            ï¿½Ç·ñ»º´ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½)
+	 * @return bitmap Í¼Æ¬bitmapï¿½á¹¹
 	 * 
 	 */
 	public Bitmap getBitmapFromUrl(String url, boolean cache2Memory) {
@@ -100,7 +98,7 @@ public class LoaderImpl {
 			bitmap = BitmapFactory.decodeStream(is);
 
 			if (cache2Memory) {
-				// 1.»º´æbitmapÖÁÄÚ´æÈíÒýÓÃÖÐ
+				// 1.ï¿½ï¿½ï¿½ï¿½bitmapï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				mLruCache.put(md5(url), bitmap);
 				if (cache2FileFlag) {
 					String fileName = md5(url);
@@ -108,7 +106,7 @@ public class LoaderImpl {
 					FileOutputStream fos = new FileOutputStream(filePath);
 					bitmap.compress(Bitmap.CompressFormat.PNG, 100, fos);
 					fos.close();
-					Log.d(TAG, "³É¹¦´æ´¢Í¼Æ¬µ½±¾µØ£¡");
+					Log.d(TAG, "ï¿½É¹ï¿½ï¿½æ´¢Í¼Æ¬ï¿½ï¿½ï¿½ï¿½ï¿½Ø£ï¿½");
 				}
 			}
 
@@ -122,7 +120,7 @@ public class LoaderImpl {
 	}
 
 	/**
-	 * ´ÓÄÚ´æ»º´æÖÐ»ñÈ¡bitmap
+	 * ï¿½ï¿½ï¿½Ú´æ»ºï¿½ï¿½ï¿½Ð»ï¿½È¡bitmap
 	 * 
 	 * @param url
 	 * @return bitmap or null.
@@ -135,7 +133,7 @@ public class LoaderImpl {
 	}
 	
 	/**
-	 * ´æ´¢Í¼µ½µ½»º´æÖÐ
+	 * ï¿½æ´¢Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * @param key
 	 * @param bitmap
 	 */
@@ -147,7 +145,7 @@ public class LoaderImpl {
 	} 
 
 	public Bitmap loadIconByPkg(String pkg) {
-		// ¸ù¾Ý°üÃû»ñÈ¡³ÌÐòÍ¼±ê
+		// ï¿½ï¿½Ý°ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½
 		ApplicationInfo application = new ApplicationInfo();
 		try {
 			application = context.getPackageManager().getApplicationInfo(pkg,
@@ -165,35 +163,35 @@ public class LoaderImpl {
 
 	}
 
-	private Bitmap drawableToBitmap(Drawable drawable) // drawable ×ª»»³É bitmap
+	private Bitmap drawableToBitmap(Drawable drawable) // drawable ×ªï¿½ï¿½ï¿½ï¿½ bitmap
 	{
-		int width = drawable.getIntrinsicWidth(); // È¡ drawable µÄ³¤¿í
+		int width = drawable.getIntrinsicWidth(); // È¡ drawable ï¿½Ä³ï¿½ï¿½ï¿½
 		int height = drawable.getIntrinsicHeight();
 		Bitmap.Config config = drawable.getOpacity() != PixelFormat.OPAQUE ? Bitmap.Config.ARGB_8888
-				: Bitmap.Config.RGB_565; // È¡ drawable µÄÑÕÉ«¸ñÊ½
-		Bitmap bitmap = Bitmap.createBitmap(width, height, config); // ½¨Á¢¶ÔÓ¦
+				: Bitmap.Config.RGB_565; // È¡ drawable ï¿½ï¿½ï¿½ï¿½É«ï¿½ï¿½Ê½
+		Bitmap bitmap = Bitmap.createBitmap(width, height, config); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦
 																	// bitmap
-		Canvas canvas = new Canvas(bitmap); // ½¨Á¢¶ÔÓ¦ bitmap µÄ»­²¼
+		Canvas canvas = new Canvas(bitmap); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ bitmap ï¿½Ä»ï¿½ï¿½ï¿½
 		drawable.setBounds(0, 0, width, height);
-		drawable.draw(canvas); // °Ñ drawable ÄÚÈÝ»­µ½»­²¼ÖÐ
+		drawable.draw(canvas); // ï¿½ï¿½ drawable ï¿½ï¿½ï¿½Ý»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		return bitmap;
 	}
 
 	private Drawable zoomDrawable(Drawable drawable, float w, float h) {
 		int width = drawable.getIntrinsicWidth();
 		int height = drawable.getIntrinsicHeight();
-		Bitmap oldbmp = drawableToBitmap(drawable); // drawable ×ª»»³É bitmap
-		Matrix matrix = new Matrix(); // ´´½¨²Ù×÷Í¼Æ¬ÓÃµÄ Matrix ¶ÔÏó
-		float scaleWidth = (w / width); // ¼ÆËãËõ·Å±ÈÀý
+		Bitmap oldbmp = drawableToBitmap(drawable); // drawable ×ªï¿½ï¿½ï¿½ï¿½ bitmap
+		Matrix matrix = new Matrix(); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½Ãµï¿½ Matrix ï¿½ï¿½ï¿½ï¿½
+		float scaleWidth = (w / width); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å±ï¿½ï¿½ï¿½
 		float scaleHeight = (h / height);
-		matrix.postScale(scaleWidth, scaleHeight); // ÉèÖÃËõ·Å±ÈÀý
+		matrix.postScale(scaleWidth, scaleHeight); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å±ï¿½ï¿½ï¿½
 		Bitmap newbmp = Bitmap.createBitmap(oldbmp, 0, 0, width, height,
-				matrix, true); // ½¨Á¢ÐÂµÄ bitmap £¬ÆäÄÚÈÝÊÇ¶ÔÔ­ bitmap µÄËõ·ÅºóµÄÍ¼
-		return new BitmapDrawable(newbmp); // °Ñ bitmap ×ª»»³É drawable ²¢·µ»Ø
+				matrix, true); // ï¿½ï¿½ï¿½ï¿½ï¿½Âµï¿½ bitmap ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¶ï¿½Ô­ bitmap ï¿½ï¿½ï¿½ï¿½ï¿½Åºï¿½ï¿½Í¼
+		return new BitmapDrawable(newbmp); // ï¿½ï¿½ bitmap ×ªï¿½ï¿½ï¿½ï¿½ drawable ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	}
 
 	/**
-	 * ´ÓÍâ²¿ÎÄ¼þ»º´æÖÐ»ñÈ¡bitmap
+	 * ï¿½ï¿½ï¿½â²¿ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð»ï¿½È¡bitmap
 	 * 
 	 * @param url
 	 * @return
@@ -226,23 +224,23 @@ public class LoaderImpl {
 
 	public static byte[] readInputStream(InputStream inStream) throws Exception {
 		ByteArrayOutputStream outStream = new ByteArrayOutputStream();
-		// ´´½¨Ò»¸öBuffer×Ö·û´®
+		// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Bufferï¿½Ö·ï¿½
 		byte[] buffer = new byte[1024];
-		// Ã¿´Î¶ÁÈ¡µÄ×Ö·û´®³¤¶È£¬Èç¹ûÎª-1£¬´ú±íÈ«²¿¶ÁÈ¡Íê±Ï
+		// Ã¿ï¿½Î¶ï¿½È¡ï¿½ï¿½ï¿½Ö·ï¿½ï¿½È£ï¿½ï¿½ï¿½ï¿½Îª-1ï¿½ï¿½ï¿½ï¿½ï¿½È«ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½
 		int len = 0;
-		// Ê¹ÓÃÒ»¸öÊäÈëÁ÷´ÓbufferÀï°ÑÊý¾Ý¶ÁÈ¡³öÀ´
+		// Ê¹ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½bufferï¿½ï¿½ï¿½ï¿½ï¿½Ý¶ï¿½È¡ï¿½ï¿½ï¿½ï¿½
 		while ((len = inStream.read(buffer)) != -1) {
-			// ÓÃÊä³öÁ÷ÍùbufferÀïÐ´ÈëÊý¾Ý£¬ÖÐ¼ä²ÎÊý´ú±í´ÓÄÄ¸öÎ»ÖÃ¿ªÊ¼¶Á£¬len´ú±í¶ÁÈ¡µÄ³¤¶È
+			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½bufferï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½Ð¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½Î»ï¿½Ã¿ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½lenï¿½ï¿½ï¿½ï¿½È¡ï¿½Ä³ï¿½ï¿½ï¿½
 			outStream.write(buffer, 0, len);
 		}
-		// ¹Ø±ÕÊäÈëÁ÷
+		// ï¿½Ø±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		inStream.close();
-		// °ÑoutStreamÀïµÄÊý¾ÝÐ´ÈëÄÚ´æ
+		// ï¿½ï¿½outStreamï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½Ú´ï¿½
 		return outStream.toByteArray();
 	}
 
 	/**
-	 * MD5 ¼ÓÃÜ
+	 * MD5 ï¿½ï¿½ï¿½ï¿½
 	 */
 	private static String md5(String str) {
 		try {
@@ -260,9 +258,9 @@ public class LoaderImpl {
 				buf.append(Integer.toHexString(i));
 			}
 			return buf.toString();
-			// System.out.println("result: " + buf.toString());// 32Î»µÄ¼ÓÃÜ
+			// System.out.println("result: " + buf.toString());// 32Î»ï¿½Ä¼ï¿½ï¿½ï¿½
 			// System.out.println("result: " + buf.toString().substring(8,
-			// 24));// 16Î»µÄ¼ÓÃÜ
+			// 24));// 16Î»ï¿½Ä¼ï¿½ï¿½ï¿½
 		} catch (NoSuchAlgorithmException e) {
 			return "";
 		}

@@ -38,6 +38,7 @@ import android.content.pm.PackageInfo;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -231,6 +232,17 @@ public class MainActivity extends FragmentActivity {
 			for (int i = 0; i < Config.PAGE_COUNT; i++) {
 				Fragment mTextFragmentOne = getFragmentByPage(i);
 				fragmentList.add(mTextFragmentOne);
+
+
+				FocusScaleShineButton btn = getButtonByPage(i);
+				btn.setTag(i);
+				btn.setOnClickListener(new OnClickListener() {
+					@Override
+					public void onClick(View v) {
+						mainFocusShow(Integer.parseInt(v.getTag().toString()));
+					}
+				});
+
 			}
 			vp_frag_list.setAdapter(new FragmentAdapter(
 					getSupportFragmentManager(), fragmentList));

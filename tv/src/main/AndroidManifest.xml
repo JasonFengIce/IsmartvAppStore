@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.boxmate.tv"
     android:versionCode="28"
-    android:versionName="2.4.0.release3.shiyun" >
+    android:versionName="2.4.0.release4.shiyun" >
 
     <uses-sdk
         android:minSdkVersion="14"

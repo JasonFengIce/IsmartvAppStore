@@ -99,6 +99,49 @@ public class AppListActivity extends Activity implements
 
 		appPageListView = (AppViewPagerView) findViewById(R.id.app_page_container);
 		appPageListView.delegate = this;
+
+		findViewById(R.id.app_list_botton_top_btn).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				loadRankType(1);
+				bottomType = 1;
+			}
+		});
+		findViewById(R.id.app_list_botton_latest_btn).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				loadRankType(2);
+				bottomType = 2;
+			}
+		});
+		findViewById(R.id.right_tip).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				int index = appPageListView.getCurrentItem();
+				index = index + 1;
+				appPageListView.setCurrentItem(index, true);
+			}
+		});
+
+		findViewById(R.id.left_tip).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				int index = appPageListView.getCurrentItem();
+				index = index - 1;
+				if(index<0) {
+					return;
+				}
+				appPageListView.setCurrentItem(index, true);
+			}
+		});
+		findViewById(id.menu).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(AppListActivity.this, SearchActivity.class);
+				startActivity(intent);
+				finish();
+			}
+		});
 	}
 
 	public boolean onKeyDown(int kCode, KeyEvent kEvent) {

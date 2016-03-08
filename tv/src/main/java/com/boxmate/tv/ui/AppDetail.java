@@ -487,9 +487,15 @@ public class AppDetail extends Activity implements
 					taskInfo.status = TaskInfo.SUCCESS;
 					fresh();
 				}
-
 				break;
 
+			case SecurityService.DOWNLOAD_STATUS_FAILED:
+				if (packageName.equals(taskInfo.getPackageName())) {
+					CommonUtil.showBigTip(this,"网络错误,下载失败");
+					taskInfo.status = TaskInfo.FAILED;
+					fresh();
+				}
+				break;
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

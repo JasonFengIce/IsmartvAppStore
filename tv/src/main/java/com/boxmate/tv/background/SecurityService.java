@@ -346,6 +346,14 @@ public class SecurityService extends Service {
 						public void onFailure(Throwable t, int errorNo,
 								String strMsg) {
 							Log.e(currenTaskInfo.getPackageName(), "下载失败");
+
+
+							if (delegate != null) {
+								delegate.onTaskUpdate(
+										currenTaskInfo.getPackageName(),
+										DOWNLOAD_STATUS_FAILED);
+							}
+
 							setCurrentTaskStatus(TaskInfo.FAILED);
 							mDownloadQueue.remove(currenTaskInfo);
 							sendMsg(DOWNLOAD_STATUS_FAILED);
