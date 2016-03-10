@@ -1,7 +1,11 @@
 package com.boxmate.tv.adapter;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -42,6 +46,7 @@ public class AppListAdapter extends PagerAdapter {
 	private int marginTop;
 	private int col = 3, row = 3;
 	private int pageCount;
+	public HashMap<String,ImageView> itemList = new HashMap<String, ImageView>();
 
 	public int getPageCount() {
 		return pageCount;
@@ -144,6 +149,8 @@ public class AppListAdapter extends PagerAdapter {
 			StarList sl_star = (StarList) item.findViewById(R.id.sl_star);
 
 			final AppInfo app = imageList.get(i);
+
+			itemList.put(app.getPackagename(),iv_installed);
 			
 			tiv_icon.configImageUrl(app.getIconUrl());
 			tv_title.setText(app.getAppname());

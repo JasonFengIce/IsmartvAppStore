@@ -13,6 +13,7 @@ import reco.frame.tv.TvHttp;
 import reco.frame.tv.http.AjaxCallBack;
 import reco.frame.tv.view.TvButton;
 import reco.frame.tv.view.TvLoadingBar;
+import reco.frame.tv.view.TvRelativeLayout;
 
 import com.boxmate.tv.R;
 import com.boxmate.tv.R.id;
@@ -54,6 +55,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnFocusChangeListener;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -67,13 +69,27 @@ public class InstallListActivity extends Activity {
 	// private TextView tv_download_hint;
 	private TvButton install_easy;
 	private TvLoadingBar tlb_loading;
-
+	private AppListAdapter adapter;
 	public void setRankType(int rankType) {
 		this.rankType = rankType;
 	}
 
 	public void onResume() {
 		super.onResume();
+
+		if(adapter!=null) {
+
+
+			for (String key : adapter.itemList.keySet()) {
+				ImageView bg = adapter.itemList.get(key);
+				if(CommonUtil.checkPackageInstalled(key)) {
+					bg.setVisibility(View.VISIBLE);
+					bg.setBackgroundResource(R.drawable.app_installed_cover);
+				}
+			}
+		}
+
+
 		MobclickAgent.onResume(this);
 	}
 
@@ -153,10 +169,11 @@ public class InstallListActivity extends Activity {
 	}
 
 	private void show() {
-		AppListAdapter adapter = new AppListAdapter(getApplicationContext(),
+		adapter = new AppListAdapter(getApplicationContext(),
 				appList);
 		vp_list.setAdapter(adapter);
 		tlb_loading.setVisibility(View.GONE);
+
 
 		install_easy.setOnClickListener(new OnClickListener() {
 
