@@ -1,24 +1,20 @@
 package com.boxmate.tv;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.PackageManager.NameNotFoundException;
+import android.graphics.drawable.Drawable;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.util.Log;
+import android.view.View;
 
-import org.apache.http.HttpResponse;
-import org.apache.http.client.ClientProtocolException;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.util.EntityUtils;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import reco.frame.tv.TvBitmap;
-
-import com.boxmate.tv.R;
 import com.boxmate.tv.background.SecurityService;
 import com.boxmate.tv.entity.Config;
 import com.boxmate.tv.net.HttpCommon;
@@ -30,25 +26,22 @@ import com.boxmate.tv.util.SystemUtil;
 import com.boxmate.tv.view.WebImageView;
 import com.umeng.analytics.MobclickAgent;
 
-import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
-import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
-import android.content.SharedPreferences;
-import android.content.SharedPreferences.Editor;
-import android.content.pm.ApplicationInfo;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
-import android.content.pm.PackageManager.NameNotFoundException;
-import android.graphics.drawable.Drawable;
-import android.util.Log;
-import android.view.Menu;
-import android.view.View;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
-import android.widget.Toast;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.util.EntityUtils;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+import reco.frame.tv.TvBitmap;
 
 public class LauncherActivity extends Activity {
 
@@ -66,8 +59,9 @@ public class LauncherActivity extends Activity {
 				break;
 
 			}
-		};
+		}
 	};
+	private Boolean hasLastLauncher = true;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -99,8 +93,6 @@ public class LauncherActivity extends Activity {
 		loadVideoPkgList();
 	}
 
-	private Boolean hasLastLauncher = true;
-
 	private void loadData() {
 
 		final SharedPreferences sp = getSharedPreferences("launcher_setting",
@@ -118,7 +110,7 @@ public class LauncherActivity extends Activity {
 						imageView.setImageDrawable((Drawable) msg.obj);
 					} catch (Exception e) {
 					}
-				};
+				}
 			};
 			new Thread(new Runnable() {
 				@Override
