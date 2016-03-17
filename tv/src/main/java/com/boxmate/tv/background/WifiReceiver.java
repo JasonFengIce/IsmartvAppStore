@@ -57,7 +57,7 @@ public class WifiReceiver extends BroadcastReceiver{
 					if (!SecurityService.isDownloading&&
 							SystemUtil.getNetName(context).equals(CommonUtil.readWifiName())) {
 						SecurityService.isDownloading=true;
-						SecurityService.instance.continueDownload();
+						//SecurityService.instance.continueDownload();
 					}
 				} else {
 					Log.e(TAG, "网络断开");

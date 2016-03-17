@@ -44,6 +44,32 @@ public class ImageBrowserActivity extends Activity {
 		Log.i("url", urlList.toString());
 		
 		freshTip();
+
+
+        findViewById(R.id.right_tip).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                index++;
+                if (index == urlList.size()) {
+                    index = urlList.size() - 1;
+                } else {
+                    tb.display(imageView, urlList.get(index));
+                }
+                freshTip();
+            }
+        });
+        findViewById(R.id.left_tip).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                index--;
+                if (index == -1) {
+                    index = 0;
+                } else {
+                    tb.display(imageView, urlList.get(index));
+                }
+                freshTip();
+            }
+        });
 		
 	}
 

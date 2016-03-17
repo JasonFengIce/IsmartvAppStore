@@ -87,11 +87,10 @@ public class SecurityService extends Service {
 				break;
 			case DOWNLOAD_STATUS_FAILED:
 
-//				AppDownloadManager.getInstance().setStatusByTaskId(
-//						TaskInfo.FAILED, currenTaskInfo.getTaskId());
+				AppDownloadManager.getInstance().delTaskByPackageName(
+                        currenTaskInfo.getPackageName());
 				CommonUtil.deleteFile(getApplicationContext(),
 						currenTaskInfo.getDownloadUrl());
-				//currenTaskInfo.status = TaskInfo.FAILED;
 				startDownload();
 				break;
 			case DOWNLOAD_STATUS_START:
@@ -357,6 +356,7 @@ public class SecurityService extends Service {
 							setCurrentTaskStatus(TaskInfo.FAILED);
 							mDownloadQueue.remove(currenTaskInfo);
 							sendMsg(DOWNLOAD_STATUS_FAILED);
+
 						};
 
 					});
@@ -371,9 +371,11 @@ public class SecurityService extends Service {
 	}
 
 	private void sendMsg(int msgType) {
+
+
 		Message msg = mHandler.obtainMessage(msgType);
-		TaskInfo taskInfo = currenTaskInfo.clone();
-		msg.obj = taskInfo;
+		TaskInfo t = currenTaskInfo.clone();
+		msg.obj = t;
 		msg.sendToTarget();
 	}
 

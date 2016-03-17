@@ -85,7 +85,25 @@ public class UninstallActivity extends Activity {
 		left_tip = (ImageView) findViewById(R.id.left_tip);
 		tlb_loading = (TvLoadingBar) findViewById(R.id.tlb_loading);
 		loadList();
-		
+		left_tip.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				int index = vp_list.getCurrentItem();
+				index = index - 1;
+				if (index < 0) {
+					return;
+				}
+				vp_list.setCurrentItem(index, true);
+			}
+		});
+		right_tip.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				int index = vp_list.getCurrentItem();
+				index = index + 1;
+				vp_list.setCurrentItem(index, true);
+			}
+		});
 	}
 
 	private void loadList() {

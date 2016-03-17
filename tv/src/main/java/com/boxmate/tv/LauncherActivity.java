@@ -56,6 +56,7 @@ public class LauncherActivity extends Activity {
 	private final static int ADB_INSTALL_SUCCESS = 0;
 	public static String dbFilePath;
 	private TvBitmap tb;
+	private Boolean isDestroyed = false;
 	private Handler mHandler = new Handler() {
 		public void handleMessage(Message msg) {
 
@@ -265,6 +266,11 @@ public class LauncherActivity extends Activity {
 	}
 
 	private void jump() {
+
+		if(isDestroyed) {
+			return;
+		}
+
 		Intent mainIntent = new Intent(LauncherActivity.this,
 				MainActivity.class);
 		LauncherActivity.this.startActivity(mainIntent);
@@ -337,6 +343,11 @@ public class LauncherActivity extends Activity {
 		} catch (NameNotFoundException e) {
 			e.printStackTrace();
 		}
+
+	}
+	protected void onDestroy(){
+		super.onDestroy();
+		isDestroyed = true;
 
 	}
 }
